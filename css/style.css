@@ -2,14 +2,29 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "iransans";
+}
+a{
+  text-decoration: none; 
+  color: inherit; 
+}
+body{
+    background-color: rgb(238, 238, 238);
+}
+a:hover{
+    color: inherit;
 }
 div#header-container{
-    background-color: red;
+    background-color: white;
+    position: relative;
 }
 div#header-container div.header-top-row{
     text-align: center;
     background-color: white;
 }               
+div#header-container div.row>div{
+    background-color: rgb(255, 255, 255);
+}
 
 
                 /*start header logo */
@@ -17,6 +32,7 @@ div#header-container div.header-top-row{
 
 div#header-container div.header-top-row>div{
     padding: 10px;
+    padding-bottom: 0;
 }
 div#header-container div.header-top-row>div.header-logo{
     text-align: right;
@@ -34,6 +50,7 @@ div#header-container div.header-top-row div.header-search-box input{
     background-color: rgb(234, 234, 234);
     height: 40px;
     margin-top: 3px;
+    font-size: 14px;
 }
 div#header-container div.header-top-row div.header-search-box input:focus{
     box-shadow: none;
@@ -111,10 +128,253 @@ div#header-container div.header-top-row div.header-left-buttons div.header-sign-
                         /*finish header left buttons */
 
 
-div#header-container div.row>div{
-    background-color: rgb(255, 255, 255);
+                        /*start header bottom row*/
+
+
+div#header-container div.header-bottom-row{
+    background-color: white;
+    text-align: right;
+    display: flex;
+    position: relative;
+    margin-right: -9px;
+}
+div#header-container div.header-bottom-row>div{
+    background-color: white;
+    font-weight: 500;
+    text-align: right !important;
+    flex-flow: row;
+    padding: 10px;
+    padding-left: 35px;
+    transition: background-color .3s;
+}
+div#header-container div.header-bottom-row>div:hover{
+    border-bottom: 2px solid red;
+}
+div#header-container div.header-bottom-row>div:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+div#header-container div.header-bottom-row>div>h3{
+    font-size: 14px;
+    margin: 0;
+}
+div#header-container div.header-bottom-row>div>h3>i{
+    vertical-align: middle;
+    font-size: 20px;
+    margin-left: 3px;
+}
+div#header-container div.header-user-location{
+    text-align: left;
+    font-size: 13px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    /* padding: 8px; */
+    padding: 10px;
+}
+div#header-container div.header-user-location:hover{
+    cursor: pointer;
+}
+div#header-container div.header-user-location>p{
+    margin: 0;
+}
+div#header-container div.header-user-location>p>i{
+    vertical-align: middle;
+    color: red;
+}
+div#header-container div#header-sliding-menu{
+    position: absolute;
+    /* padding: 15px; */
+    width: 35px;
+    text-align: center;
+    padding: 9px 0;
+    height: 35px;
+    /* background-color: #EE384E; */
+    border-radius: 5px;
+    color: whitesmoke;
+    cursor: pointer;
+    top: 15px;
+    display: none;
+}
+div#header-container div#header-sliding-menu>i{
+    font-size: 24px;
+    font-weight: lighter;
 }
 
+
+
+                    /*finish header bottom row*/
+
+                    /* start sliding menu */
+
+
+div#sliding-menu{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    /* padding-bottom: 50px; */
+    /* overflow-y: scroll; */
+    /* direction: ltr; */
+    background-color: white;
+    top: 0;
+    right: -100%;
+    display: none;
+    z-index: 10;
+    transition: right .5s;
+    transition-timing-function: ease-out;
+}
+div#sliding-menu>div.sliding-menu-logo{
+    /* background-color: aqua; */
+    position: relative;
+    text-align: center;
+    padding: 17px 0;
+    margin-bottom: 50px;
+}
+div#sliding-menu>div.sliding-menu-logo>div.close-sliding-menu{
+    position: absolute;
+    left: -40px;
+    padding: 20px 10px;
+    height: 90px;
+    top: 0;
+    border-radius: 0px 0 0 45px;
+    background-color: white;
+    text-align: center;
+    color: #222;
+    cursor: pointer;
+}
+div#sliding-menu>div.sliding-menu-logo>div.close-sliding-menu>i{
+    margin-left: 10px;
+}
+
+                    /* start sliding menu main */
+
+div#sliding-menu div.sliding-menu-main{
+    position: relative;
+    /* background-color: red; */
+    color: rgb(204, 204, 204);
+    overflow-x: hidden;
+}
+div#sliding-menu div.sliding-menu-main div.accordion-flush{
+    overflow-y: scroll;
+    height: 70vh;
+    position: relative;
+    left: -17px;
+}
+div#sliding-menu div.sliding-menu-main div.accordion-item h2 button{
+    font-family: "iransans";
+    font-size: 15px;
+    font-weight: 700;
+    /* background-color: rgb(182, 189, 202); */
+    border-radius: 0;
+    color: #444;
+    padding: 10px 0;
+}
+div#sliding-menu div.sliding-menu-main div.accordion-item h2 button>i{
+    position: absolute;
+    left: 25px;
+    vertical-align: middle;
+}
+div#sliding-menu div.sliding-menu-main div.accordion-item h2 button:focus{
+    /* background-color: red; */
+    box-shadow: none;
+    /* color: #222;
+    background-color: rgb(226, 226, 226); */
+    /* background-color:rgb(30, 40, 60); */
+}
+div#sliding-menu div.sliding-menu-main div.accordion-item div.accordion-body ul.group1{
+    padding: 5px 20px;
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+    background-color: rgb(255, 255, 255);
+    color: #222;
+}
+div#sliding-menu div.sliding-menu-main div.accordion-item div.accordion-body ul.group1>li>a>h3{
+    font-family: "iransans";
+    font-size: 14px;
+    font-weight: 600;
+}
+div#sliding-menu div.sliding-menu-main div.accordion-item div.accordion-body ul.group2{
+    padding: 15px 20px;
+    padding-top: 0;
+    padding-left: 0;
+    list-style: none;
+    width: 100%;
+
+}
+div#sliding-menu div.sliding-menu-main div.accordion-item div.accordion-body ul.group2>a>li{
+    padding: 5px 0;
+    
+    /* width: 100%; */
+    /* background-color: yellow; */
+}
+div#sliding-menu div.sliding-menu-main div.accordion-item div.accordion-body ul.group2>a>li::before{
+    content: "";
+    border: 2px solid #f9152c;
+    font-size: 10px;
+    width: 1px ;
+    margin-left: 5px;
+    /* height: 1px; */
+    border-radius: 20%;
+    vertical-align: middle;
+    /* background-color: red; */
+}
+div#sliding-menu div.sliding-menu-main div.accordion-item div.accordion-body ul.group2>a>li>h3{
+    font-family: "iransans";
+    font-size: 13px;
+    font-weight: 100;
+}
+div#sliding-menu p{
+    margin: 0;
+}
+div#sliding-menu div.sliding-menu-sign{
+    position: relative;
+    padding: 10px 15px;
+    bottom: 20px;
+    /* width: 50%; */
+    font-weight: 500;
+    color: #444;
+    font-size: 14px;
+    background-color: rgb(155, 225, 255);
+    text-align: right;
+    /* margin: 0 auto; */
+}
+div#sliding-menu div.sliding-menu-cart{
+    position: relative;
+    padding: 10px 15px;
+    bottom: 20px;
+    /* width: 50%; */
+    font-weight: 500;
+    color: #444;
+    font-size: 14px;
+    background-color: rgb(111, 188, 200);
+    text-align: right;
+    /* margin: 0 auto; */
+}
+div#sliding-menu div.sliding-menu-cart i ,
+div#sliding-menu div.sliding-menu-sign i{
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+                            /* finish sliding menu main */
+
+
+                            /* start black background */
+
+div#black-background{
+    display: none;
+    width: 100%;
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    height: 100%;
+    background-color: rgba(59, 59, 59, 0.693);
+}
+
+
+                            /* finish black background */
 
 @media screen and (max-width: 1200px) {
     div#header-container div.header-top-row>div.header-logo{
@@ -125,6 +385,18 @@ div#header-container div.row>div{
     div#header-container div.header-top-row>div.header-logo img{
         width: 20%;
      }
+     div#header-container div.header-bottom-row{
+        display: none;
+     }
+     div#header-container div.header-user-location{
+        display: none;
+     }
+     div#header-container div#header-sliding-menu{
+        display: block;
+     }
+     div#sliding-menu{
+        display: block;
+     }
 }
 @media screen and (max-width: 420px) {
     div#header-container div.header-top-row div.header-left-buttons{
@@ -133,4 +405,8 @@ div#header-container div.row>div{
     div#header-container div.header-top-row div.header-search-box{
         flex-grow: 12;
     }
+    div#header-container div#header-sliding-menu{
+        top: 3px;
+     }
+
 }

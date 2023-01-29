@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="css/style.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font.css">
     <title>Document</title>
 </head>
@@ -15,11 +16,11 @@
         <div id="header-container" class="container-fluid">
             <div class="row header-top-row">
                 <div class="col-xl-1 col-sm-12 header-logo">
-                    <img src="images/logo.png" alt="logo" width="100%">
+                    <a href=""><img src="images/logo.png" alt="logo" width="100%"></a>
                 </div>
                 <div class="col-xl-5 col-5 header-search-box">
                     <div dir="ltr" class="input-group mb-3">
-                        <input dir="rtl" type="text" class="form-control border-0" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <input dir="rtl" type="text" class="form-control border-0" placeholder="دنبال چیزی می گردی ؟" aria-label="Recipient's username" aria-describedby="button-addon2">
                         <button class="btn bg-danger" type="button" id="button-addon2"><i class="fa fa-search" style="font-size:18px"></i></button>
                     </div>
                 </div>
@@ -32,17 +33,180 @@
                     </div>
                 </div>
             </div>
-            <div class="row header-bottom-row">
-                <div class="col">y</div>
-                <div class="col">7</div>
-                <div class="col">u</div>
-                <div class="col">r</div>  
+            <div class="header-bottom-row">
+                <div><h3><i class="fa fa-navicon" style="font: size 20px"></i> دسته بندی محصولات</h3></div>
+                <div><h3><i class="fa fa-gift" style="font-size:20px"></i> پیشنهاد شگفت انگیز</h3></div>
+                <div><h3>مقالات</h3></div>
+                <div><h3>درباره ما</h3></div>
+                <div><h3>تماس با ما</h3></div>
             </div>
+            <div class="header-user-location">
+                <p><i class="material-icons" style="font-size:18px">location_on</i>ارسال به <span id="header-location">تهران ، تهران</span></p>
+            </div>
+            <div id="header-sliding-menu" onclick="openSlidingMenu()"><i class="fa fa-navicon" style="font: size 24px"></i></div>
         </div>
     </header>
-    <main></main>
+    <div id="sliding-menu">
+        <div class="sliding-menu-logo">
+            <a href=""><img src="images/logo.png" alt="" width="100px"></a>
+            <div class="close-sliding-menu" onclick="closeSlidingMenu()">
+                <i class="fa fa-close" style="font-size:28px"></i>
+            </div>
+        </div>
+        <div class="sliding-menu-sign">
+            <a href=""><i class="fa fa-user" style="font-size:17px"></i> <span>ورود / ثبت نام</span></a>
+        </div>
+        <div class="sliding-menu-cart">
+            <a href=""><i class="fa fa-shopping-cart" style="font-size:17px"></i><span>مشاهده سبد خرید</span></a>
+        </div>
+        <div class="sliding-menu-main">
+            <div class="accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        کالای دیجیتال <i class="fa fa-chevron-down" style="font-size:14px"></i>  
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul class="group1">
+                            <li>
+                                <a href=""><h3>گوشی موبایل</h3></a>
+                                <ul class="group2">
+                                    <a href=""><li>اپل</li></a>
+                                    <a href=""><li>شیائومی</li></a>
+                                    <a href=""><li>سامسونگ</li></a>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href=""><h3>لپ تاپ</h3></a>
+                                <ul class="group2">
+                                    <a href=""><li>ایسوس</li></a>
+                                    <a href=""><li>ام اس آی</li></a>
+                                    <a href=""><li>لنوو</li></a>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href=""><h3>هدفون و هندزفری</h3></a>
+                                <ul class="group2">
+                                    <a href=""><li>بلوتوثی</li></a>
+                                    <a href=""><li>ایرپاد</li></a>
+                                    <a href=""><li>گیمینگ</li></a>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href=""><h3>کامپیوتر و لوازم جانبی</h3></a>
+                                <ul class="group2">
+                                    <a href=""><li>موس</li></a>
+                                    <a href=""><li>مانیتور</li></a>
+                                    <a href=""><li>کیس های اسمبل شده</li></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        مد و پوشاک <i class="fa fa-chevron-down" style="font-size:14px"></i>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul class="group1">
+                            <li>
+                                <a href=""><h3>گوشی موبایل</h3></a>
+                                <ul class="group2">
+                                    <a href=""><li>اپل</li></a>
+                                    <a href=""><li>شیائومی</li></a>
+                                    <a href=""><li>سامسونگ</li></a>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href=""><h3>لپ تاپ</h3></a>
+                                <ul class="group2">
+                                    <a href=""><li>ایسوس</li></a>
+                                    <a href=""><li>ام اس آی</li></a>
+                                    <a href=""><li>لنوو</li></a>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href=""><h3>هدفون و هندزفری</h3></a>
+                                <ul class="group2">
+                                    <a href=""><li>بلوتوثی</li></a>
+                                    <a href=""><li>ایرپاد</li></a>
+                                    <a href=""><li>گیمینگ</li></a>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href=""><h3>کامپیوتر و لوازم جانبی</h3></a>
+                                <ul class="group2">
+                                    <a href=""><li>موس</li></a>
+                                    <a href=""><li>مانیتور</li></a>
+                                    <a href=""><li>کیس های اسمبل شده</li></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      خانه و آشپزخانه<i class="fa fa-chevron-down" style="font-size:14px"></i>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <ul class="group1">
+                            <li>
+                                <a href=""><h3>گوشی موبایل</h3></a>
+                                <ul class="group2">
+                                    <a href=""><li>اپل</li></a>
+                                    <a href=""><li>شیائومی</li></a>
+                                    <a href=""><li>سامسونگ</li></a>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href=""><h3>لپ تاپ</h3></a>
+                                <ul class="group2">
+                                    <a href=""><li>ایسوس</li></a>
+                                    <a href=""><li>ام اس آی</li></a>
+                                    <a href=""><li>لنوو</li></a>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href=""><h3>هدفون و هندزفری</h3></a>
+                                <ul class="group2">
+                                    <a href=""><li>بلوتوثی</li></a>
+                                    <a href=""><li>ایرپاد</li></a>
+                                    <a href=""><li>گیمینگ</li></a>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href=""><h3>کامپیوتر و لوازم جانبی</h3></a>
+                                <ul class="group2">
+                                    <a href=""><li>موس</li></a>
+                                    <a href=""><li>مانیتور</li></a>
+                                    <a href=""><li>کیس های اسمبل شده</li></a>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="black-background" onclick="closeBlack(),closeSlidingMenu()"></div>
+    <main>
+        <div id="main-container">
+        </div>
+    </main>
     <footer></footer>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
