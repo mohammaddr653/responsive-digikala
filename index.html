@@ -5,18 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font.css">
-    <title>Document</title>
+    <title>Digikala</title>
 </head>
 <body>
-    <div id="top-header-ads">
-        <a href=""><img src="images/top-header-ads.jpg" alt="ads" width="100%"></a>
-    </div>
     <header>
         <div id="header-container" class="container-fluid">
+            <div id="top-header-ads">
+                <a href=""><img src="images/top-header-ads.jpg" alt="ads" width="100%"></a>
+            </div>        
             <div class="row header-top-row">
                 <div class="col-xl-1 col-sm-12 header-logo">
                     <a href=""><img src="images/logo.png" alt="logo" width="100%"></a>
@@ -42,11 +44,11 @@
                 <div><h3>مقالات</h3></div>
                 <div><h3>درباره ما</h3></div>
                 <div><h3>تماس با ما</h3></div>
+                <div class="header-user-location">
+                    <p><i class="material-icons" style="font-size:18px">location_on</i>ارسال به <span id="header-location">تهران ، تهران</span></p>
+                </div>    
             </div>
-            <div class="header-user-location">
-                <p><i class="material-icons" style="font-size:18px">location_on</i>ارسال به <span id="header-location">تهران ، تهران</span></p>
-            </div>
-            <div id="header-sliding-menu" onclick="openSlidingMenu()"><i class="fa fa-navicon" style="font: size 24px"></i></div>
+            <div id="header-sliding-menu" onclick="openSlidingMenu()"><i class="fa fa-navicon" style="font: size 2400px"></i></div>
         </div>
     </header>
     <div id="main-products-menu">
@@ -711,9 +713,717 @@
     <div id="black-background" onclick="closeSlidingMenu()"></div>
     <main>
         <div id="main-container">
+            <div class="main-top-carousel">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <a href=""><img src="images/carousel image 1.jpg" class="d-block w-100" alt="..."></a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href=""><img src="images/carousel image 2.jpg" class="d-block w-100" alt="..."></a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href=""><img src="images/carousel image 3.jpg" class="d-block w-100" alt="..."></a>
+                      </div>
+                      <div class="carousel-item">
+                        <a href=""><img src="images/carousel image 4.jpg" class="d-block w-100" alt="..."></a>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+            <div class="main-services">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <a href=""><img src="images/original.png" alt="original"><label for="">ضمانت اصل بودن کالا</label></a>
+                        </div>
+                        <div class="col">
+                            <a href=""><img src="images/7days.png" alt="7days"><label for="">هفت روز ضمانت بازگشت</label></a>
+                        </div>
+                        <div class="col">
+                            <a href=""><img src="images/24hours.png" alt="24hours"><label for="">هفت روز هفته ، 24 ساعته</label></a>
+                        </div>
+                        <div class="col">
+                            <a href=""><img src="images/pay in location.png" alt="pay"><label for="">امکان پرداخت در محل</label></a>
+                        </div>
+                        <div class="col">
+                            <a href=""><img src="images/express delivery.png" alt="express"><label for="">امکان تحویل اکسپرس</label></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-carousel main-amazing-slider container-fluid container-xl">
+                <div class="owl-carousel owl-theme">
+                    <div class="item amazing-slider-intro">
+                        <img src="images/amazing intro.png" alt="">
+                        <label for=""><a href="">مشاهده همه</a></label>
+                    </div>
+                    <div class="item amazing-slider-item first-item">
+                        <a href=""><img src="images/test1.jpg" alt="">
+                            <label for="">
+                                <p class="product-name long-name-text">موبایل شیائومی note 8 pro</p>
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span></p>
+                            </label>
+                        </a>
+                    </div>
+                    <div class="item amazing-slider-item">
+                        <a href=""><img src="images/test5.jpg" alt="">
+                            <label for="">
+                                <p class="product-name long-name-text">موبایل شیائومی note 8 pro</p>
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span></p>
+                            </label>
+                        </a>
+                    </div>
+                    <div class="item amazing-slider-item">
+                        <a href=""><img src="images/test18.jpg" alt="">
+                            <label for="">
+                                <p class="product-name long-name-text">موبایل شیائومی note 8 pro</p>
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span></p>
+                            </label>
+                        </a>
+                    </div>
+                    <div class="item amazing-slider-item">
+                        <a href=""><img src="images/test23.jpg" alt="">
+                            <label for="">
+                                <p class="product-name long-name-text">موبایل شیائومی note 8 pro</p>
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span></p>
+                            </label>
+                        </a>
+                    </div>
+                    <div class="item amazing-slider-item">
+                        <a href=""><img src="images/test19.jpg" alt="">
+                            <label for="">
+                                <p class="product-name long-name-text">موبایل شیائومی note 8 pro</p>
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span></p>
+                            </label>
+                        </a>
+                    </div>
+                    <div class="item amazing-slider-item">
+                        <a href=""><img src="images/test7.jpg" alt="">
+                            <label for="">
+                                <p class="product-name long-name-text">موبایل شیائومی note 8 pro</p>
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span></p>
+                            </label>
+                        </a>
+                    </div>
+                    <div class="item amazing-slider-item">
+                        <a href=""><img src="images/test9.jpg" alt="">
+                            <label for="">
+                                <p class="product-name long-name-text">موبایل شیائومی note 8 pro</p>
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span></p>
+                            </label>
+                        </a>
+                    </div>
+                    <div class="item amazing-slider-item">
+                        <a href=""><img src="images/test10.jpg" alt="">
+                            <label for="">
+                                <p class="product-name long-name-text">موبایل شیائومی note 8</p>
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span></p>
+                            </label>
+                        </a>
+                    </div>
+                    <div class="item amazing-slider-item">
+                        <a href=""><img src="images/test15.jpg" alt="">
+                            <label for="">
+                                <p class="product-name long-name-text">موبایل شیائومبببببببببببببببببببببببببببی note 8 pro</p>
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span></p>
+                            </label>
+                        </a>
+                    </div>
+                    <div class="item amazing-slider-item last-item">
+                        <a href="">
+                            <div>
+                                <span>مشاهده همه</span><span><i class="fa fa-chevron-circle-left" style="font-size:36px"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>                
+            </div>
+            <div class="main-4in1ads container">
+                <div class="row">
+                    <div class="col m-0 p-2 m-lg-0 p-lg-0"><a href=""><img src="images/4in1-1.jpg" alt=""></a></div>
+                    <div class="col-1 d-none m-0 p-0 d-lg-block" style="width: 15px;"></div>
+                    <div class="col m-0 p-2 m-lg-0 p-lg-0"><a href=""><img src="images/4in1-2.jpg" alt=""></a></div>
+                    <div class="main-4in1ads-space w-100 d-lg-none"></div>
+                    <div class="col-1 d-none m-0 p-0 d-lg-block" style="width: 15px;"></div>
+                    <div class="col m-0 p-2 m-lg-0 p-lg-0"><a href=""><img src="images/4in1-3.jpg" alt=""></a></div>
+                    <div class="col-1 d-none m-0 p-0 d-lg-block" style="width: 15px;"></div>
+                    <div class="col m-0 p-2 m-lg-0 p-lg-0"><a href=""><img src="images/4in1-4.jpg" alt=""></a></div>
+                </div>
+            </div>
+            <div class="main-carousel main-brands-slider container-fluid container-xl">
+                <div class="main-carousel-title">
+                    <p><h3>محبوب ترین برند ها</h3></p>
+                </div>
+                <div class="owl-carousel owl-theme">
+                    <div class="item first-item">
+                        <a href=""><img src="images/brand1.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href=""><img src="images/brand2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href=""><img src="images/brand3.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href=""><img src="images/brand20.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href=""><img src="images/brand17.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href=""><img src="images/brand6.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href=""><img src="images/brand7.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href=""><img src="images/brand15.png" alt="">
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href=""><img src="images/brand19.jpg" alt="">
+                        </a>
+                    </div>
+                </div>                
+            </div>
+            <div class="main-2in1ads container">
+                <div class="row">
+                    <div class="col-12 col-sm m-0 p-2 m-lg-0 p-lg-0"><a href=""><img src="images/2in1-1.jpg" alt=""></a></div>
+                    <div class="col-1 d-none m-0 p-0 d-sm-block" style="width: 15px;"></div>
+                    <div class="col-12 col-sm m-0 p-2 m-lg-0 p-lg-0"><a href=""><img src="images/2in1.jpg" alt=""></a></div>
+                </div>
+            </div>
+            <div class="products-carousel container-fluid container-xl">
+                <div class="row">
+                    <div class="col-12 col-sm">
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col-12 label"><h3>گوشی موبایل</h3></div>
+                                <div class="col-12 note1"><p>بر اساس بازدید های شما</p></div>
+                                
+                                <div class="col-6"><a href=""><img src="images/test1.jpg" alt="" width="100%"></a></div>
+                                <div class="col-6"><a href=""><img src="images/test2.jpg" alt="" width="100%"></a></div>
+                                
+                                <!-- Force next columns to break to new line -->
+                                <div class="w-100 p-0"></div>
+                                
+                                <div class="col-6"><a href=""><img src="images/test3.jpg" alt="" width="100%"></a></div>
+                                <div class="col-6"><a href=""><img src="images/test4.jpg" alt="" width="100%"></a></div>
+                                <div class="col-12 see-all"><a href="#">مشاهده همه</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm">
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col-12 label"><h3>هدفون هدست و هندزفری</h3></div>
+                                <div class="col-12 note1"><p>بر اساس بازدید های شما</p></div>
+                                <div class="col-6"><a href=""><img src="images/test9.jpg" alt="" width="100%"></a></div>
+                                <div class="col-6"><a href=""><img src="images/test10.jpg" alt="" width="100%"></a></div>
+                                
+                                <!-- Force next columns to break to new line -->
+                                <div class="w-100 p-0"></div>
+                                
+                                <div class="col-6"><a href=""><img src="images/test11.jpg" alt="" width="100%"></a></div>
+                                <div class="col-6"><a href=""><img src="images/test12.jpg" alt="" width="100%"></a></div>
+                                <div class="col-12 see-all"><a href="#">مشاهده همه</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm">
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col-12 label"><h3>کیف و کاور گوشی</h3></div>
+                                <div class="col-12 note1"><p>بر اساس بازدید های شما</p></div>
+                                <div class="col-6"><a href=""><img src="images/test5.jpg" alt="" width="100%"></a></div>
+                                <div class="col-6"><a href=""><img src="images/test6.jpg" alt="" width="100%"></a></div>
+                                
+                                <!-- Force next columns to break to new line -->
+                                <div class="w-100 p-0"></div>
+                                
+                                <div class="col-6"><a href=""><img src="images/test7.jpg" alt="" width="100%"></a></div>
+                                <div class="col-6"><a href=""><img src="images/test8.jpg" alt="" width="100%"></a></div>
+                                <div class="col-12 see-all"><a href="#">مشاهده همه</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm">
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col-12 label"><h3>ساعت هوشمند</h3></div>
+                                <div class="col-12 note1"><p>بر اساس بازدید های شما</p></div>
+                                <div class="col-6"><a href=""><img src="images/test13.jpg" alt="" width="100%"></a></div>
+                                <div class="col-6"><a href=""><img src="images/test14.jpg" alt="" width="100%"></a></div>
+                                
+                                <!-- Force next columns to break to new line -->
+                                <div class="w-100 p-0"></div>
+                                
+                                <div class="col-6"><a href=""><img src="images/test15.jpg" alt="" width="100%"></a></div>
+                                <div class="col-6"><a href=""><img src="images/test16.jpg" alt="" width="100%"></a></div>
+                                <div class="col-12 see-all"><a href="#">مشاهده همه</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="most-sells container-fluid container-xl">
+                <div class="row most-sells-intro">
+                    <h3>پرفروش ترین محصولات</h3>
+                    <a href="">مشاهده همه</a>
+                </div>
+                <div class="row most-sells-main">
+                    <div class="container text-center">
+                        <div class="row">
+                            <div class="col">
+                                <a href="">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                    <img src="images/test30.jpg" width="100%" alt="">
+                                            </div>
+                                            <div class="col-9">
+                                                <p><span class="most-sells-count">1</span><span class="most-sells-name long-name-text">خودکار پنتر مدل فوق روان نانو باکتریال</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                    <img src="images/test27.jpg" width="100%" alt="">
+                                            </div>
+                                            <div class="col-9">
+                                                <p><span class="most-sells-count">2</span><span class="most-sells-name long-name-text">خودکار پنتر مدل فوق روان نانو باکتریال</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                    <img src="images/test20.jpg" width="100%" alt="">
+                                            </div>
+                                            <div class="col-9">
+                                                <p><span class="most-sells-count">3</span><span class="most-sells-name long-name-text">خودکار پنتر مدل فوق روان نانو باکتریال</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col d-none d-sm-block">
+                                <a href="">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                    <img src="images/test12.jpg" width="100%" alt="">
+                                            </div>
+                                            <div class="col-9">
+                                                <p><span class="most-sells-count">4</span><span class="most-sells-name long-name-text">خودکار پنتر مدل فوق روان نانو باکتریال</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                    <img src="images/test18.jpg" width="100%" alt="">
+                                            </div>
+                                            <div class="col-9">
+                                                <p><span class="most-sells-count">5</span><span class="most-sells-name long-name-text">خودکار پنتر مدل فوق روان نانو باکتریال</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                    <img src="images/test11.jpg" width="100%" alt="">
+                                            </div>
+                                            <div class="col-9">
+                                                <p><span class="most-sells-count">6</span><span class="most-sells-name long-name-text">خودکار پنتر مدل فوق روان نانو باکتریال</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>                            
+                            <div class="col d-none d-sm-block">
+                                <a href="">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                    <img src="images/test6.jpg" width="100%" alt="">
+                                            </div>
+                                            <div class="col-9">
+                                                <p><span class="most-sells-count">7</span><span class="most-sells-name long-name-text">خودکار پنتر مدل فوق روان نانو باکتریال</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                    <img src="images/test3.jpg" width="100%" alt="">
+                                            </div>
+                                            <div class="col-9">
+                                                <p><span class="most-sells-count">8</span><span class="most-sells-name long-name-text">خودکار پنتر مدل فوق روان نانو باکتریال</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                    <img src="images/test13.jpg" width="100%" alt="">
+                                            </div>
+                                            <div class="col-9">
+                                                <p><span class="most-sells-count">9</span><span class="most-sells-name long-name-text">خودکار پنتر مدل فوق روان نانو باکتریال</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col d-none d-md-block">
+                                <a href="">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                    <img src="images/test26.jpg" width="100%" alt="">
+                                            </div>
+                                            <div class="col-9">
+                                                <p><span class="most-sells-count">10</span><span class="most-sells-name long-name-text">خودکار پنتر مدل فوق روان نانو باکتریال</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                    <img src="images/test23.jpg" width="100%" alt="">
+                                            </div>
+                                            <div class="col-9">
+                                                <p><span class="most-sells-count">11</span><span class="most-sells-name long-name-text">خودکار پنتر مدل فوق روان نانو باکتریال</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                    <img src="images/test28.jpg" width="100%" alt="">
+                                            </div>
+                                            <div class="col-9">
+                                                <p><span class="most-sells-count">12</span><span class="most-sells-name long-name-text">خودکار پنتر مدل فوق روان نانو باکتریال</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="products-carousel container-fluid container-xl">
+                <div class="row">
+                    <div class="col-12 col-sm">
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col-12 label"><h3>گوشی موبایل</h3></div>
+                                <div class="col-12 note1"><p>بر اساس بازدید های شما</p></div>
+                                
+                                <div class="col-6"><a href=""><img src="images/test33.jpg" alt="" width="100%"></a></div>
+                                <div class="col-6"><a href=""><img src="images/test34.jpg" alt="" width="100%"></a></div>
+                                
+                                <!-- Force next columns to break to new line -->
+                                <div class="w-100 p-0"></div>
+                                
+                                <div class="col-6"><a href=""><img src="images/test35.jpg" alt="" width="100%"></a></div>
+                                <div class="col-6"><a href=""><img src="images/test36.jpg" alt="" width="100%"></a></div>
+                                <div class="col-12 see-all"><a href="#">مشاهده همه</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm">
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col-12 label"><h3>هدفون هدست و هندزفری</h3></div>
+                                <div class="col-12 note1"><p>بر اساس بازدید های شما</p></div>
+                                <div class="col-6"><a href=""><img src="images/test37.jpg" alt="" width="100%"></a></div>
+                                <div class="col-6"><a href=""><img src="images/test38.jpg" alt="" width="100%"></a></div>
+                                
+                                <!-- Force next columns to break to new line -->
+                                <div class="w-100 p-0"></div>
+                                
+                                <div class="col-6"><a href=""><img src="images/test39.jpg" alt="" width="100%"></a></div>
+                                <div class="col-6"><a href=""><img src="images/test40.jpg" alt="" width="100%"></a></div>
+                                <div class="col-12 see-all"><a href="#">مشاهده همه</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm">
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col-12 label"><h3>کیف و کاور گوشی</h3></div>
+                                <div class="col-12 note1"><p>بر اساس بازدید های شما</p></div>
+                                <div class="col-6"><a href=""><img src="images/test41.jpg" alt="" width="100%"></a></div>
+                                <div class="col-6"><a href=""><img src="images/test42.jpg" alt="" width="100%"></a></div>
+                                
+                                <!-- Force next columns to break to new line -->
+                                <div class="w-100 p-0"></div>
+                                
+                                <div class="col-6"><a href=""><img src="images/test43.jpg" alt="" width="100%"></a></div>
+                                <div class="col-6"><a href=""><img src="images/test44.jpg" alt="" width="100%"></a></div>
+                                <div class="col-12 see-all"><a href="#">مشاهده همه</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm">
+                        <div class="container text-center">
+                            <div class="row">
+                                <div class="col-12 label"><h3>ساعت هوشمند</h3></div>
+                                <div class="col-12 note1"><p>بر اساس بازدید های شما</p></div>
+                                <div class="col-6"><a href=""><img src="images/test45.jpg" alt="" width="100%"></a></div>
+                                <div class="col-6"><a href=""><img src="images/test46.jpg" alt="" width="100%"></a></div>
+                                
+                                <!-- Force next columns to break to new line -->
+                                <div class="w-100 p-0"></div>
+                                
+                                <div class="col-6"><a href=""><img src="images/test47.jpg" alt="" width="100%"></a></div>
+                                <div class="col-6"><a href=""><img src="images/test48.jpg" alt="" width="100%"></a></div>
+                                <div class="col-12 see-all"><a href="#">مشاهده همه</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="best-discount container-fluid container-xl">
+                <div class="row best-discount-label">
+                    <div class="col">
+                        <h3>منتخب محصولات تخفیف و حراج</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test29.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>            
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test30.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>
+                    <div class="w-100 d-block d-lg-none"></div>            
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test27.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>  
+                    <div class="w-100 d-none d-xl-none d-lg-block"></div>          
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test28.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>
+                    <div class="w-100 d-block d-lg-none"></div>            
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test25.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>            
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test26.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>            
+                </div>
+                <div class="row d-none d-md-flex">
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test23.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>            
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test24.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>
+                    <div class="w-100 d-block d-lg-none"></div>            
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test22.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>  
+                    <div class="w-100 d-none d-xl-none d-lg-block"></div>          
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test21.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>
+                    <div class="w-100 d-block d-lg-none"></div>            
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test20.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>            
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test19.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>            
+                </div>
+                <div class="row d-none d-md-flex">
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test12.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>            
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test13.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>
+                    <div class="w-100 d-block d-lg-none"></div>            
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test14.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>  
+                    <div class="w-100 d-none d-xl-none d-lg-block"></div>          
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test15.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>
+                    <div class="w-100 d-block d-lg-none"></div>            
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test16.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>            
+                    <div class="col best-discount-item">
+                        <a href="">
+                            <img src="images/test4.jpg" alt="" width="100%">
+                            <label for="">
+                                <p class="price"><span class="discount">22%</span><span>20000</span><span>تومان </span></p>
+                                <p class="price-before-discount"><span>50000</span><span>تومان </span></p>
+                            </label>
+                        </a>
+                    </div>            
+                </div>
+
+            </div>
         </div>
     </main>
     <footer></footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/index.js"></script>
