@@ -207,3 +207,6 @@ function setHighest(height){
     }
 
 }
+function winBacktoTop(){
+    window.scrollTo(0,0);
+}
