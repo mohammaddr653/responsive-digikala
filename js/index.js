@@ -91,14 +91,9 @@ function openMainProductsMenu(){
     mainProductsMenu.classList.add('main-products-menu-fade');
     productsCategoryDiv.style.borderBottom="2px solid #f9152c";
     productCategoryUls[0].style.display="block";
-    // productCategoryUls[0].style.backgroundColor="black";
     blackBackground.classList.add("black-background-duration");
     blackBackground.style.top=window.scrollY+headerContainer.clientHeight+"px";
     blackBackground.style.zIndex=6;
-    // countingH=setTimeout(function(){
-    //     h=1;
-    //     body.style.overflowY="hidden";
-    // },300);
 }
 function closeMainProductsMenu(){
     clearTimeout(bodyOverflow);
@@ -110,7 +105,6 @@ function closeMainProductsMenu(){
     bodyOverflow=setTimeout(function(){
         body.style.overflowY="scroll";
     },300);
-    // clearTimeout(countingH);
 }
 for(var n=1 ; n<=productCategoryLis.length-1 ; n++ ){
     productCategoryLis[n].addEventListener("mouseenter",productCategoryLisIn);
@@ -119,7 +113,6 @@ productCategoryLis[0].addEventListener("mouseenter",function(){
     productCategoryUls[0].style.display="block";
 });
 function productCategoryLisIn(){
-    // alert("hh");
     productCategoryUls[0].style.display="none";
 }
 $(document).ready(function(){
@@ -127,32 +120,23 @@ $(document).ready(function(){
         rtl:true,
         nav:true,
         responsive : {
-            // breakpoint from 0 up
             0 : {
                 items : 2,
-                // option2 : value,
             },
-            // breakpoint from 480 up
             400 : {
                 items : 2,
-                // option2 : value,
             },
-            // breakpoint from 768 up
             500 : {
                 items : 3,
-                // option2 : value,
             },
             700 : {
                 items : 4,
-                // option2 : value,
             },
             900 : {
                 items : 5,
-                // option2 : value,
             },
             1200 : {
                 items : 7,
-                // option2 : value,
             }
         }
     });
@@ -177,13 +161,9 @@ var itemN;
 var itemX;
 var itemY;
 function owlCarouselItemHeight(){
-    // alert(owlCarouselItem[1].clientHeight);
 
     for(itemN=0;itemN<=amazingOwlCarouselItem.length-1;itemN++){
-        // alert(owlCarouselItem[itemN+1]);
         itemX=amazingOwlCarouselItem[itemN];
-        // alert(itemX.clientHeight);
-        // alert(itemY.clientHeight);
 
         if(itemX.clientHeight>highestItem){
             highestItem=itemX.clientHeight;
