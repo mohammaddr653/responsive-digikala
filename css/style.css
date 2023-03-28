@@ -181,15 +181,21 @@ div#header-container div.header-bottom-row>div{
     transition: background-color .3s;
     transition: border-bottom .3s;
 }
+div#header-container div.header-bottom-row>div>a{
+    padding: 0;
+    margin: 0;
+    padding: 10px;
+    padding-left: 35px;
+}
 div#header-container div.header-bottom-row>div:hover{
     border-bottom: 2px solid #f9152c;
     cursor: pointer;
 }
-div#header-container div.header-bottom-row>div>h3{
+div#header-container div.header-bottom-row>div h3{
     font-size: 14px;
     margin: 0;
 }
-div#header-container div.header-bottom-row>div>h3>i{
+div#header-container div.header-bottom-row>div h3>i{
     vertical-align: middle;
     font-size: 20px;
     margin-left: 3px;
