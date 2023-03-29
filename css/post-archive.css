@@ -655,15 +655,15 @@ div#main-container>div:nth-child(2)>aside>div.post-category>div>div:nth-child(2)
 
 
 
-div#main-container>div:nth-child(2)>aside>div.message{
+div#main-container>div:nth-child(2) div.message{
     background-color: white;
     padding: 0;
 }
-div#main-container>div:nth-child(2)>aside>div.message>div>div:nth-child(2){
+div#main-container>div:nth-child(2) div.message>div>div:nth-child(2){
     /* background-color: red; */
     padding: 10px 20px;
 }
-div#main-container>div:nth-child(2)>aside>div.message>div>div:nth-child(2)>p{
+div#main-container>div:nth-child(2) div.message>div>div:nth-child(2)>p{
     white-space:pre-line;
     line-height: 30px;
     font-size: 14px;
@@ -672,22 +672,22 @@ div#main-container>div:nth-child(2)>aside>div.message>div>div:nth-child(2)>p{
     text-align: justify;
     
 }
-div#main-container>div:nth-child(2)>aside>div.message>div>div:nth-child(2)>p>a{
+div#main-container>div:nth-child(2) div.message>div>div:nth-child(2)>p>a{
     color: #1798a6;
 }
-div#main-container>div:nth-child(2)>aside>div.message>div>div:nth-child(3){
+div#main-container>div:nth-child(2) div.message>div>div:nth-child(3){
     /* background-color: greenyellow; */
     text-align: right;
     padding: 10px 20px;
 }
-div#main-container>div:nth-child(2)>aside>div.message>div>div:nth-child(3)>span:nth-child(1){
+div#main-container>div:nth-child(2) div.message>div>div:nth-child(3)>span:nth-child(1){
     display: inline-block;
     width: 30px;
     border-radius: 100%;
     overflow: hidden;
     vertical-align: middle;
 }
-div#main-container>div:nth-child(2)>aside>div.message>div>div:nth-child(3)>span:nth-child(2){
+div#main-container>div:nth-child(2) div.message>div>div:nth-child(3)>span:nth-child(2){
     font-size: 13px;
     color: #444;
     font-weight: 500;
@@ -701,7 +701,7 @@ div#main-container>div:nth-child(2)>aside>div.message>div>div:nth-child(3)>span:
                                 /* start side 1in1 ads */
 
 
-div#main-container>div:nth-child(2)>aside>div.side-1in1ads{
+div#main-container>div:nth-child(2) div.side-1in1ads{
     padding: 0;
 }
                                 /* finish side 1in1 ads */
@@ -710,11 +710,11 @@ div#main-container>div:nth-child(2)>aside>div.side-1in1ads{
                                 /* start new posts */
 
 
-div#main-container>div:nth-child(2)>aside>div.new-posts{
+div#main-container>div:nth-child(2) div.new-posts{
     background-color: white;
     padding: 0;
 }
-div#main-container>div:nth-child(2)>aside>div.new-posts>div>div:nth-child(1){
+div#main-container>div:nth-child(2) div.new-posts>div>div:nth-child(1){
     padding: 0;
     /* background-color: white; */
     padding: 20px;
@@ -722,33 +722,33 @@ div#main-container>div:nth-child(2)>aside>div.new-posts>div>div:nth-child(1){
     border-bottom: 1px solid rgb(225, 225, 225);
 
 }
-div#main-container>div:nth-child(2)>aside>div.new-posts>div>div:nth-child(1)>h3{
+div#main-container>div:nth-child(2) div.new-posts>div>div:nth-child(1)>h3{
     font-size: 17px;
     color: #444;
     font-weight: 600;
     margin-bottom: 0;
 
 }
-div#main-container>div:nth-child(2)>aside>div.new-posts>div>div:nth-child(2){
+div#main-container>div:nth-child(2) div.new-posts>div>div:nth-child(2){
     /* background-color: ; */
     padding: 0;
 }
-div#main-container>div:nth-child(2)>aside>div.new-posts>div>div:nth-child(2)>ul{
+div#main-container>div:nth-child(2) div.new-posts>div>div:nth-child(2)>ul{
     padding: 0;
 }
-div#main-container>div:nth-child(2)>aside>div.new-posts>div>div:nth-child(2)>ul>li>a{
+div#main-container>div:nth-child(2) div.new-posts>div>div:nth-child(2)>ul>li>a{
     /* background-color: greenyellow; */
     /* display: block; */
     padding: 20px 0;
 }
-div#main-container>div:nth-child(2)>aside>div.new-posts>div>div:nth-child(2)>ul>li>a>span:nth-child(1){
+div#main-container>div:nth-child(2) div.new-posts>div>div:nth-child(2)>ul>li>a>span:nth-child(1){
     /* width: 310px; */
     /* height: 100%; */
     margin: 0 20px 0 5px;
     /* background-color: red; */
     /* display: inline-block; */
 }
-div#main-container>div:nth-child(2)>aside>div.new-posts>div>div:nth-child(2)>ul>li>a>span:nth-child(2){
+div#main-container>div:nth-child(2) div.new-posts>div>div:nth-child(2)>ul>li>a>span:nth-child(2){
     /* background-color: red; */
     /* display: inline-block; */
     /* width: 60%; */
@@ -769,25 +769,25 @@ div#main-container>div:nth-child(2)>aside>div.new-posts>div>div:nth-child(2)>ul>
                                 /* start digi offer */
 
 
-div#main-container>div:nth-child(2)>aside>div.digi-offer{
+div#main-container>div:nth-child(2) div.digi-offer{
     background-color: white;
 }
-div#main-container>div:nth-child(2)>aside>div.digi-offer>div:nth-child(1){
+div#main-container>div:nth-child(2) div.digi-offer>div:nth-child(1){
     /* background-color: greenyellow; */
     text-align: center;
     padding: 20px 0;
 }
-div#main-container>div:nth-child(2)>aside>div.digi-offer>div:nth-child(1)>h3{
+div#main-container>div:nth-child(2) div.digi-offer>div:nth-child(1)>h3{
     font-size: 17px;
     color: #444;
     font-weight: 600;
     margin-bottom: 0;
 }
-div#main-container>div:nth-child(2)>aside>div.digi-offer>a>div:nth-child(2){
+div#main-container>div:nth-child(2) div.digi-offer>a>div:nth-child(2){
     /* background-color: yellowgreen; */
     padding: 10px;
 }
-div#main-container>div:nth-child(2)>aside>div.digi-offer>a>div:nth-child(2)>h3{
+div#main-container>div:nth-child(2) div.digi-offer>a>div:nth-child(2)>h3{
     font-size: 16px;
     color: #444;
     font-weight: 500;
@@ -795,31 +795,31 @@ div#main-container>div:nth-child(2)>aside>div.digi-offer>a>div:nth-child(2)>h3{
     line-height: 30px;
 
 }
-div#main-container>div:nth-child(2)>aside>div.digi-offer>a>div:nth-child(3){
+div#main-container>div:nth-child(2) div.digi-offer>a>div:nth-child(3){
     /* background-color: yellowgreen; */
     padding: 30px 10px;
     /* padding-bottom: 30px; */
 }
-div#main-container>div:nth-child(2)>aside>div.digi-offer>a>div:nth-child(3)>span{
+div#main-container>div:nth-child(2) div.digi-offer>a>div:nth-child(3)>span{
     width: 30px;
     display: inline-block;
     overflow: hidden;
     border-radius: 100%;
     vertical-align: middle;
 }
-div#main-container>div:nth-child(2)>aside>div.digi-offer>a>div:nth-child(3)>h4{
+div#main-container>div:nth-child(2) div.digi-offer>a>div:nth-child(3)>h4{
     font-size: 13px;
     color: #444;
     font-weight: 500;
     margin-bottom: 0;
     display: inline-block;
 }
-div#main-container>div:nth-child(2)>aside>div.digi-offer>a{
+div#main-container>div:nth-child(2) div.digi-offer>a{
     position: relative;
     animation-name: digi-offer-show;
     animation-duration: 1.5s;
 }
-div#main-container>div:nth-child(2)>aside>div.digi-offer>a::after{
+div#main-container>div:nth-child(2) div.digi-offer>a::after{
     content: "";
     width: 0%;
     height: 2.5px;

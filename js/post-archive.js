@@ -38,8 +38,10 @@ function windowBiggerThan1200(){
             mainProductsMenu.style.top=window.scrollY+headerTopRow.clientHeight+headerBottomRow.clientHeight+topHeaderAds.clientHeight-1+"px";
         } 
         setScrollOptions();
+        changeOffer();
     }else{
         mainContainer.style.marginTop= headerTopRow.clientHeight+headerBottomRow.clientHeight+topHeaderAds.clientHeight+10+"px";
+        mobChangeOffer()
     }    
 }
 windowBiggerThan1200();
@@ -196,9 +198,12 @@ function winBacktoTop(){
 
             // post archive js
 
-
-var digiOfferPosts = document.querySelectorAll("div#main-container>div:nth-child(2)>aside>div.digi-offer>a");
+var postChangeInterval;
+var mobPostChangeInterval;
 function changeOffer(){
+    clearInterval(postChangeInterval);
+    clearInterval(mobPostChangeInterval);
+    var digiOfferPosts = document.querySelectorAll("div#main-container>div:nth-child(2)>aside>div.digi-offer>a");
     var prevdigiOfferPosts;
     var presdigiOfferPosts;
     for(var offerPostsnumb=1;offerPostsnumb<=digiOfferPosts.length-1;offerPostsnumb++){
@@ -221,6 +226,35 @@ function changeOffer(){
         offerPostsnum=offerPostsnum+1;
     }
     change();
-    setInterval(change,7000);
+    postChangeInterval=setInterval(change,7000);
 }
-changeOffer();
+
+function mobChangeOffer(){
+    clearInterval(postChangeInterval);
+    clearInterval(mobPostChangeInterval);
+    var digiOfferPosts = document.querySelectorAll("div#main-container>div:nth-child(2)>div.digi-offer>a");
+    var prevdigiOfferPosts;
+    var presdigiOfferPosts;
+    for(var offerPostsnumb=1;offerPostsnumb<=digiOfferPosts.length-1;offerPostsnumb++){
+        var digiOfferPost=digiOfferPosts[offerPostsnumb];
+        digiOfferPost.style.display="none";
+    }
+    var offerPostsnum=0;
+    function change(){
+        if(offerPostsnum==digiOfferPosts.length){
+            prevdigiOfferPosts=digiOfferPosts[offerPostsnum-1];
+            prevdigiOfferPosts.style.display="none";
+            offerPostsnum=0;
+        }
+        if(offerPostsnum>=1){
+            prevdigiOfferPosts=digiOfferPosts[offerPostsnum-1];
+            prevdigiOfferPosts.style.display="none";
+        }
+        presdigiOfferPosts=digiOfferPosts[offerPostsnum];
+        presdigiOfferPosts.style.display="block";
+        offerPostsnum=offerPostsnum+1;
+    }
+    change();
+    mobPostChangeInterval=setInterval(change,7000);
+}
+
